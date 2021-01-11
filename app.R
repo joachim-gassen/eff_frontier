@@ -61,7 +61,7 @@ ui <- fluidPage(
       ),
       p(
         "You see that the blue asset is expected to be both, more profitable",
-        "and more risky than the red asset. Assuming that you want to invest",
+        "and riskier than the red asset. Assuming that you want to invest",
         "some money in these two assets: How could you allocate your money",
         "on these two assets and what risk/return payoff could you expect?"
       ),
@@ -94,7 +94,7 @@ ui <- fluidPage(
       8,
       p(
         "Think about the portfolio that you would like to invest in.", 
-        "Would you like to minimize the risk or would you like to", 
+        "Would you like to minimize the risk, or would you like to", 
         "take on some risk for the perspective of higher returns?"
       ),
       p(
@@ -133,7 +133,7 @@ ui <- fluidPage(
       8,
       p(
         "You see that what has been a line has now become an area.", 
-         "As you added the third asset, there are now many portfolios that",
+        "As you added the third asset, there are now many portfolios that",
         "are not efficient anymore.", 
         "The Efficient Frontier is again highlighted. It is characterized by",
         "those portfolios that delineate the top left curve of the area,",
@@ -159,17 +159,17 @@ ui <- fluidPage(
       p(
         "You might wonder:",
         "'Well, which portfolio on the efficient frontier should I pick?'",
-        "Financial Economics has two concepts for you but I consider both not",
+        "Financial Economics has two concepts for you, but I consider both not",
         "to have the same level of general appeal compared to the concept",
         "of the efficient frontier."
-        ),
+      ),
       p(
         "The first answer is: It depends on your risk preference. You",
         "should be able to draw personal indifference lines in the risk-return",
-        "space (black cruves below), meaning that you can identify risk/return combinations for", 
+        "space (black curves below), meaning that you can identify risk/return combinations for", 
         "which you are indifferent. Choose the line that just touches the",
         "efficient frontier. This is your portfolio (orange point below)."
-        ),
+      ),
       br(), br(), br(),
       withSpinner(plotOutput("static_risk_pref")),
       br(), br(), br(),
@@ -177,7 +177,7 @@ ui <- fluidPage(
         "The second answer is: Assume that there is a risk-free asset",
         "like a government bond generating a certain return.",
         "Then you can construct a new portfolio, mixing the risk-free asset (green point below)",
-        "with 'the market portfolio' (orange point eblow). The 'market portfolio' is the point",
+        "with 'the market portfolio' (orange point below). The 'market portfolio' is the point",
         "on the efficient frontier where a line originating from the risk/return",
         "point of the risk-free asset becomes a tangent of the efficient area.",
         "The line (blue below) is also called the capital market line and the Capital Asset",
@@ -209,10 +209,10 @@ ui <- fluidPage(
         "Instead, we see 'monkey portfolios' meaning portfolios that are only",
         "constructed based on the number of assets",
         "and that are thus not dependent on precise expectations of risk and",
-        "returns. You see that, at least as long as the asstes are modeled to",
+        "returns. You see that, at least as long as the assets are modeled to",
         "be only mildly correlated, these random portfolios, by diversifying",
         "across assets, generate returns that are significantly less risky",
-        "then the ones you would achieve by betting on one asset,", 
+        "than the ones you would achieve by betting on one asset,", 
         "also known as putting all eggs in one nest."
       )
     )
