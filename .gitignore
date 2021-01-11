@@ -37,3 +37,9 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+# JG stuff
+
+rsconnect
+.DS_Store
+*.Rproj
